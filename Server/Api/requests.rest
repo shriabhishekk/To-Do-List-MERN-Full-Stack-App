@@ -1,0 +1,27 @@
+GET http://localhost:3001/todos HTTP/1.1
+
+###
+
+POST http://localhost:3001/todo/new
+Content-Type: application/json
+
+{
+	"text": " Pizza"
+}
+
+###
+
+DELETE http://localhost:3001/todo/delete/642dd0c14f86d4f51cc7b11c
+
+###
+
+GET http://localhost:3001/todo/complete/60e585d86177f95ff0574323
+
+###
+
+PUT http://localhost:3001/todo/update/642dd1aa991b07f57ed35f33
+Content-Type: application/json
+
+{
+	"text": "Guest Lecture in Sarojni Naidu block"
+}
